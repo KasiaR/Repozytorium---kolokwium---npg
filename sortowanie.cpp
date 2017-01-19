@@ -9,6 +9,7 @@ using namespace std;
  
 int main()
 {
+cout << "Program sortuj¹cy b¹belkowo" << endl;
 int t[6]={33,41,54,43,61,1},schowek,zamiana; //deklaracja zmiennych, przypisanie liczb do tablicy
 do
 {
