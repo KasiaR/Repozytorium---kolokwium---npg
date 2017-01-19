@@ -1,3 +1,4 @@
+//Katarzyna Rugie³³o
 //Sortowanie b¹belkowe
 //dawidex44
 //www.algoryt,.org
