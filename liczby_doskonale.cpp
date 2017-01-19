@@ -1,39 +1,40 @@
-//Liczby doskona≥e
-//(c) Dominik Goüdziuk
+//Liczby doskona¬≥e
+//(c) Dominik Go≈∏dziuk
 //www.algorytm.org
- 
+
 #include <conio.h>
 #include <iostream>
- 
+
 int main() {
 using namespace std;
- 
+
 //Inicjalizacja zmiennych
+cout << "To jest program wypisujƒÖcy liczby doskona≈Çe"<< endl;
 int liczby[3];
 int znalezione = 0, x = 1, suma_dzielnikow = 0;
- 
-//DopÛki nie znaleziono 3 liczb doskona≥ych
+
+//Dop√≥ki nie znaleziono 3 liczb doskona¬≥ych
 while (znalezione < 3) {
-//Sprawdü czy x jest liczbπ doskona≥π
+//Sprawd≈∏ czy x jest liczb¬π doskona¬≥¬π
 for (int i = 1; i <= (x/2); i++) {
 if ((x % i) == 0)
-suma_dzielnikow += i;   
+suma_dzielnikow += i;
 }
- 
-//Jeøeli x jest liczbπ doskona≥π to dodaj jπ do tablicy
+
+//Je¬øeli x jest liczb¬π doskona¬≥¬π to dodaj j¬π do tablicy
 if (suma_dzielnikow == x) {
 liczby[znalezione] = x;
-++znalezione;                   
+++znalezione;
 }
 ++x;
-suma_dzielnikow = 0;   
+suma_dzielnikow = 0;
 }
- 
-//Wypisz znalezione liczby doskona≥Í
+
+//Wypisz znalezione liczby doskona¬≥√™
 cout << "Trzy pierwsze liczby doskonale: " << endl
 << liczby[0] << ", " << liczby[1] << ", " << liczby[2]
 << endl;
- 
+
 getch();
-return(0);  
+return(0);
 }
